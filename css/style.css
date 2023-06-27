@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+a{ 
+    text-decoration: none;
+    cursor: pointer;
+}
+header{
+    width: 100%;
+    height: 60px;
+    
+}
+header nav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 6px;
+}
+header nav .nav-right{
+    width: 250px;
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+    font-family: arial,sans-seri;
+    font-size: 13px;
+}
+nav .nav-right a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+}
+nav .nav-right a:hover{
+    text-decoration: underline;
+}
+nav .menu-icon-container{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav .menu-icon-container:hover{
+    background-color: #f0f0f0;
+}
+nav .menu-icon{
+    background-image: url('../assets/menu.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+nav .perfil img{
+    border-radius: 50%;
+    margin: 0 10px;
+}
+main{
+    text-align: center;
+}
+main .logo-container{
+    width: 272px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .logo-container img{
+    width: 272px;
+    height: 92px;
+}
+main .main-input{
+    width: 561px;
+    height: 44px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .input-container{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #dfe1e5;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main .input-container:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+
+main .input-container input{
+    width: 80%;
+    height: auto ;
+    border: none;
+    outline: none;
+    font-size: inherit
+}
+main .input-container .search-icon{
+    background-image: url('../assets/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+main .input-container .micro-icon{
+    background-image: url('../assets/micro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+main .button-container{
+    width: 530px;
+    margin: 0 auto;
+
+}
+main .button-container div{
+    display: inline-block;
+}
+main .button-container button{
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 16px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+main .button-container button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+}
+main p{
+    margin-top: 36px ;
+    font-family: arial,sans-seri;
+    font-size: 13px;
+    color: #4d5156;
+}
+main p a{
+    color: #1a0dab;
+}
+main p a:hover{
+    text-decoration: underline;
+}
+footer{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 0;
+    font-family: arial,sans-seri;
+    background-color: #f2f2f2;
+    
+}
+footer .location-container{
+    width: 100%;
+    height: 50%;
+    color: #70757a;
+    border-bottom: 1px solid #dadce0;
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    box-sizing: border-box;
+}
+.location-container p{
+    font-size: 15px;
+}
+footer .list-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+}
+.footer-left{
+    margin-left: 35px;
+    padding: 0;
+}
+.footer-right{
+    margin-right: 15px;
+    padding: 0;
+}
+footer .list-container ul{
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+
+}
+footer .list-container a{
+    color: #70757a ;
+    margin-right: 20px;
+    cursor: pointer;
+}
+footer .list-container a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 855px) {
+    footer .list-container{
+        justify-content: center;
+    }
+}
+
